@@ -1,0 +1,221 @@
+.NavBar {
+    position: fixed;
+    top: 0;
+    background-color: var(--Background);
+    z-index: 11;
+    min-height: 12vh;
+    width: 100%;
+    justify-content: space-between !important;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.NavBar .container {
+    justify-content: space-between !important;
+}
+
+.show {
+    position: fixed !important;
+    top: -120px !important;
+    transition: all .3s;
+}
+
+.off {
+    position: fixed !important;
+    top: 0 !important;
+    transition: all .3s;
+}
+
+/* nav left */
+.left {
+    gap: 3rem;
+}
+
+.left>button {
+    margin: 0 1rem;
+}
+
+.left li {
+    position: relative;
+    list-style: none;
+    font-size: var(--small-font);
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.left li:hover a {
+    color: var(--decoration) !important;
+    position: relative;
+}
+
+.left li a {
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 0rem .5rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: all ease-in .3s;
+}
+
+/* nav middle */
+
+.navbar-brand>a {
+    position: relative;
+    font-size: var(--hadding-font);
+    color: var(--decoration);
+    font-family: DrukCond;
+}
+
+/* nav right */
+
+.right {
+    gap: 1rem;
+}
+
+/* mobilenav */
+
+.mobileNav {
+    /* background: var(--Background); */
+    position: fixed;
+    z-index: 11;
+    height: 50vh;
+    top: 10rem;
+    padding: 5rem 0rem;
+    transition: transform .5s;
+    transform: translateY(100%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    backdrop-filter: blur(1rem);
+    border-radius: 20px;
+}
+
+.mobileNav>i {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: var(--Background);
+    padding: 1rem;
+}
+
+.clickmenu {
+    transform: translateY(0);
+}
+
+.mobileNav>.left {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+}
+
+.mobileNav>.left>li {
+    width: 100%;
+    font-size: var(--extra-font);
+    padding: 1rem 4rem;
+    margin: 0;
+    position: relative;
+    justify-content: space-between;
+    transition: padding .3s;
+}
+
+.menuLine {
+    width: 0%;
+    height: 3px;
+    padding-bottom: 0;
+    padding-right: 0;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+}
+
+.mobileNav>.left>li>a {
+    font-family: "Media Sans SemiCondensed Ultra" !important;
+}
+
+.mobileNav>.left>li:hover {
+    padding: 1rem 3rem;
+}
+
+
+.menuBottom {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contactDetails {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.socialIcone {
+    height: 100%;
+    width: 100%;
+
+}
+
+.mobileNav .btn {
+    height: 50px;
+    width: 50px;
+    background: black;
+    border-radius: 50%;
+}
+
+.mobileNav .btn svg {
+    height: 100%;
+    width: 50%;
+    color: var(--caption);
+}
+
+.socialIcone {
+    padding: 0 2rem;
+}
+
+.socialIcone>i {
+    font-size: 40px;
+    margin: 0 2rem;
+}
+
+.menubtn {
+    display: none;
+}
+
+nav a:hover {
+    color: var(--decoration) !important;
+}
+
+
+
+/* tablate screen */
+@media screen and (max-width: 1024px) {
+
+    .NavBar>ul {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 428px) {
+
+    .NavBar {
+        height: 8vh;
+        padding: 1rem;
+    }
+
+    .left {
+        gap: 1rem;
+    }
+    
+    .left>button {
+        margin: 0 0rem;
+    }
+
+    .left li a {
+        font-size: 1rem;
+    }
+    
+}

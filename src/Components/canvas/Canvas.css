@@ -1,0 +1,112 @@
+.main {
+  position: relative;
+  height: 750vh;
+  width: 100%;
+}
+
+.child {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.box1 {
+  position: absolute;
+  z-index: 2;
+  top: 85%;
+  left: 5%;
+  opacity: 0;
+  height: 40%;
+  width: fit-content;
+  padding: 1rem;
+}
+
+.box1 h3 {
+  line-height: 5rem;
+  color: white;
+  font-size: var(--hadding-font) !important;
+  font-weight: 300;
+}
+
+.box2 {
+  position: absolute;
+  z-index: 2;
+  top: 85%;
+  right: 5%;
+  opacity: 0;
+  height: 40%;
+  width: fit-content;
+  padding: 1rem;
+}
+
+.box2 h3 {
+  line-height: 5rem;
+  color: white;
+  font-size: var(--hadding-font) !important;
+  font-weight: 300;
+}
+
+
+.box3 {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  height: 100%;
+  width: 40%;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+}
+
+.box3 .one {
+  padding: 8rem 4rem;
+  align-items: flex-start;
+  justify-content: flex-start !important;
+  width: 100%;
+  height: 50%;
+  background-color: var(--Background);
+  position: absolute;
+  top: 0%;
+}
+
+.box3 .two {
+  padding: 8rem 4rem;
+  align-items: flex-end;
+  justify-content: flex-end !important;
+  height: 50%;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+  bottom: 0%;
+  background-color: var(--Background);
+}
+
+.box4 {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10%;
+  width: fit-content;
+  color: white;
+}
+.box4 h3 {
+  font-size:var(--sub-hadding-font);
+}
+
+.box4 h3 hr{
+  display: inline-block;
+  width: 40px ;
+  height: 4px ;
+  background-color: white;
+}
+

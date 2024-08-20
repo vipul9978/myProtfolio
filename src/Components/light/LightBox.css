@@ -1,0 +1,63 @@
+  .light {
+    position: relative;
+    width: 100%;
+    gap: 1rem;
+  }
+  .light a img{ 
+    border-radius:20px;
+  }
+
+  .lg-react-element {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .lg-react-element img {
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 32px 32px rgba(27, 27, 27, .05), 0 16px 16px rgba(27, 27, 27, .1), 0 8px 8px rgba(27, 27, 27, .1), 0 4px 4px rgba(27, 27, 27, .1), 0 2px 2px rgba(27, 27, 27, .1);
+  }
+
+  .item1 {
+    position: relative;
+    top: 0rem;
+  }
+
+  .item2 {
+    position: relative;
+    top: 5rem;
+  }
+
+  .item3 {
+    position: relative;
+    top: 10rem;
+  }
+
+  .item4 {
+    position: relative;
+    top: 15rem;
+  }
+
+  .item5 {
+    position: relative;
+    top: 10rem;
+  }
+
+  .item6 {
+    position: relative;
+    top: 5rem;
+  }
+
+  .item7 {
+    position: relative;
+    top: 0rem;
+  }
+
+
+  @media screen and (max-width: 428px) {
+    .lg-react-element img {
+      height: 400px;
+      width: 280px;
+    }
+
+  }

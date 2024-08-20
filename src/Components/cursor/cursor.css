@@ -1,0 +1,17 @@
+.cursor{
+  height: 12px;
+  width: 12px;
+  position: fixed;
+  background-color: black;
+  z-index: 12 !important;
+  border-radius:50% ;
+  pointer-events: none;
+  transition: all .2s;
+}
+
+@media screen and (max-width: 768px) {
+
+  .cursor {
+    display: none;
+  }
+}

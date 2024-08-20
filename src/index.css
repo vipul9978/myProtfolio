@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "sfprodesplay-light";
+    src: url("images/61dda8ac2d6530d8d9434405_SFProDisplay-Light.otf"),
+}
+
+@font-face {
+    font-family: "sfprodesplay-regular";
+    src: url("images/61dda8ad7ba2babdf37e071d_SFProDisplay-Regular.otf"),
+}
+
+@font-face {
+    font-family: "sfprodesplay-medium";
+    src: url("images/61dda8ad0965b81fb8c985ba_SFProDisplay-Medium.otf"),
+}
+
+@font-face {
+    font-family: "Media Sans SemiCondensed Ultra";
+    src: url("images/624325ea630c625303e9b1f9_Media Sans SemiCondensed - Extended.ttf"),
+}
+@font-face {
+    font-family: "DrukCond";
+    src: url("images/DrukCond-Super-Cy-Gr-Web.woff2"),
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* overflow-x: hidden; */
+    color: var(--text);
+    background-color: var(--Background);
+}
+
+/* reuseable classes */
+
+:root {
+    /* font size */
+    --Big-font: 22em;
+    --normal-big-font: 6em;
+    --hadding-font: 3.5em;
+    --extra-font: 2.6em;
+    --sub-hadding-font: 2.3em;
+    --paragraph-font: 1.2em;
+    --description-font: 1.5em;
+    --small-font: 1em;
+
+    /* colore plate */
+
+    --text: #ebe7cb;
+    --Background: #8eaeb6;
+    --decoration: #ebe7cb;
+    --caption: black;
+    --buttons: #ebe7cb;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 10px;
+    font-weight: 700
+}
+
+a,
+p {
+    font-family: sfprodesplay-light;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 38px;
+    line-height: 44px
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 32px;
+    line-height: 36px
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 30px
+}
+
+h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 24px
+}
+
+h5 {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px
+}
+
+h6 {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 18px
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+
+/* resopnsive */
+
+/* big screen */
+@media screen and (max-width: 1200px) {}
+
+/* tablate screen */
+
+@media screen and (max-width: 1024px) {
+    :root {
+        /* font size */
+        --Big-font: 6em;
+        --hadding-font: 3em;
+        --sub-hadding-font: 2em;
+        --paragraph-font: 1.2em;
+        --normal-big-font: 4em;
+        --extra-font: 2.4em;
+        --description-font: 1.5em;
+        --small-font: 1em;
+    }
+
+
+}
+
+@media screen and (max-width: 840px) {
+    :root {
+        /* font size */
+        --Big-font: 11em;
+        --hadding-font: 2.3em;
+        --sub-hadding-font: 1.8em;
+        --paragraph-font: 1.6em;
+
+        --normal-big-font: 3.8em;
+        --extra-font: 2.5em;
+        --description-font: 1.5em;
+        --small-font: 1em;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    :root {
+        /* font size */
+        --Big-font: 6em;
+        --hadding-font: 2em;
+        --sub-hadding-font: 1.5em;
+        --paragraph-font: 1.3em;
+
+        --normal-big-font: 2.5em;
+        --extra-font: 2.2em;
+        --description-font: 1.3em;
+        --small-font: 1.2em;
+    }
+
+}
+
+/* mobile devices */
+
+@media screen and (max-width: 428px) {
+    :root {
+        /* font size */
+        --Big-font: 4.8em;
+        --hadding-font: 2em;
+        --sub-hadding-font: 1.5em;
+        --paragraph-font: 1em;
+        --small-font: 1em;
+
+        --normal-big-font: 2em;
+        --extra-font: 2em;
+        --description-font: 1.2em;
+        --small-font: 1.2em;
+    }
+/* 
+    h1,
+    h2,
+    h3 {
+        line-height: 2.5rem ;
+    } */
+}
+
+@media screen and (max-width: 375px) {
+
+    :root {
+        /* font size */
+        --Big-font: 5.2em;
+        --hadding-font: 2em;
+        --sub-hadding-font: 1.5em;
+        --paragraph-font: 1em;
+        --small-font: 1em;
+
+        --normal-big-font: 1.5em;
+        --extra-font: 1.5em;
+        --description-font: 1.1em;
+        --small-font: 1.1em;
+    }
+}
+
+
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    position: relative;
+}
+
+.container {
+    min-width: 250px;
+    width: 85%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p,
+li,
+h3 {
+    font-family: "sfprodesplay-light";
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+::selection {
+    background: #fda228;
+}

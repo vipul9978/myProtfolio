@@ -1,0 +1,67 @@
+.projectSection{
+    background-color: var(--decoration);
+    padding: 1rem;
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    overflow: hidden;
+
+}
+.projectDiv{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    padding: 1rem;
+    height: 150vh;
+    width: 150vw;
+    transition: all .3s ease-out;
+}
+
+.works_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: DrukCond;
+    color: var(--Background);
+    font-size:var(--Big-font);
+    letter-spacing: 1rem;
+    opacity: 0.1;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.projects{
+    position: absolute;
+}
+.projects h2{
+    font-family: DrukCond;
+    font-size:var(--hadding-font);
+    color: var(--Background);
+}
+
+.projects:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.projects:nth-child(3){
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.projects:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.projects:nth-child(5){
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.projects:nth-child(6){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
