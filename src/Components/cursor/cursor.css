@@ -2,6 +2,7 @@
   height: 12px;
   width: 12px;
   position: fixed;
+  /* background-color: black; */
   background-color: black;
   z-index: 12 !important;
   border-radius:50% ;
